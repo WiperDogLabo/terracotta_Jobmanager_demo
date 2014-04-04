@@ -5,7 +5,7 @@
   <groupId>org.wiperdog</groupId>
   <artifactId>terracottademo</artifactId>
   <packaging>jar</packaging>
-  <name>terracottademo</name>
+  <name>terracottaJobManagerDemo</name>
   <description></description>
   <version>0.1.0</version>
 
