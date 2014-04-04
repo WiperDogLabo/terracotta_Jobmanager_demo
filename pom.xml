@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.wiperdog</groupId>
-  <artifactId>terracottademo</artifactId>
+  <artifactId>terraJobManagerDemo</artifactId>
   <packaging>jar</packaging>
   <name>terracottaJobManagerDemo</name>
   <description></description>
