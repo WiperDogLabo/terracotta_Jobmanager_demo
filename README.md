@@ -10,7 +10,18 @@ These scripts tests org.wiperdog.jobmanager.
 The terracotta server configurations are written in the file ./tc-config.xml .
 3. compmile source
          mvn install
-3. execute tests:  
+4. execute tests:  
 How to execute:    
-         mvn exec:java -P test1
+         mvn exec:java -P <profile>
+ profile: 
+  - test1
+	Test jobmanager with simple job
+  - test2
+	Test jobmanger with terracotta server with 4 simple jobs
+	 + Config Quartz in quartz.properties.
+	 + Open 2 terminal.
+	 + Run mvn exec:java -P test2 on each terminal.
+	 + Watch cluster system run and try to stop, restart each terminal to see how cluster works
+	
+		
 

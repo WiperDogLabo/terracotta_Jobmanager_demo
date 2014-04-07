@@ -198,6 +198,12 @@
         <test.mainclass>JobManagerTest1</test.mainclass>
       </properties>
     </profile>
+    <profile>
+      <id>test2</id>
+      <properties>
+        <test.mainclass>JobManagerTest2</test.mainclass>
+      </properties>
+    </profile>
   </profiles> 
 
   <build>

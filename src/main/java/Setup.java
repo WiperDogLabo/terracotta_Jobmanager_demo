@@ -7,6 +7,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Date;
 import java.util.List;
+import java.util.Properties;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -28,11 +29,22 @@ public class Setup {
 	private Scheduler scheduler;
 
 	public Scheduler setup() throws Exception {
-		sf = new StdSchedulerFactory();
+		SchedulerFactory sf = new StdSchedulerFactory();
 		scheduler = sf.getScheduler();
 		PropertySettingJobFactory jfactory = new PropertySettingJobFactory();
 		jfactory.setWarnIfPropertyNotFound(false);
 		scheduler.setJobFactory(jfactory);
+
+		return scheduler;
+	}
+	
+	public Scheduler setup(Properties prop) throws Exception {
+		StdSchedulerFactory sf = new StdSchedulerFactory();
+		sf.initialize(prop);
+		scheduler = sf.getScheduler();
+//		PropertySettingJobFactory jfactory = new PropertySettingJobFactory();
+//		jfactory.setWarnIfPropertyNotFound(false);
+//		scheduler.setJobFactory(jfactory);
 
 		return scheduler;
 	}
