@@ -17,7 +17,7 @@ public class JobManagerTest2 {
 	private final int INTERVAL = 4;
 	
 	public static void main(String[] args) {
-		(new JobManagerTest2()).Terracotta_JobManager_Test1();
+		(new JobManagerTest2()).Terracotta_JobManager_Test2();
 	}
 
 	public JobManagerTest2() {
@@ -27,7 +27,7 @@ public class JobManagerTest2 {
 	/**
 	 * Test jobmanager Add jobs before trigger
 	 */
-	public void Terracotta_JobManager_Test1() {
+	public void Terracotta_JobManager_Test2() {
 		try {
 			Scheduler sched = getScheduler();
 			sched.start();
